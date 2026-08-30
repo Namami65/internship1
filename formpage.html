@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formpage</title>
+    <style>
+        
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            gap: 20px;
+            position: fixed;
+        }
+
+        .sectionleft {
+            flex: 3; 
+            height: 100vh;
+            background-image: url("leftsidepage.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow-y: auto; 
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgb(42, 43, 17);
+        }
+
+        .sectionright {
+            flex: 7; 
+            border-radius: 10px;
+            height: 100vh;
+            background-color: #fffdf0;
+            overflow-y: auto;
+            box-shadow: 1px 1px 10px rgb(42, 43, 17);
+        }
+        label{
+            width: 700px;
+            height: 100px;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: #FEE79B;
+            font-weight: bold;
+        }
+        input{
+            font-size: 16px;
+            height: 20px;
+            width: 470px;
+            border-radius: 6px;
+        }
+        input:hover{
+            border-color: #ffde72;
+            border-width: 3px;
+        }
+        select{
+            font-size: 16px;
+            height: 28px;
+            width: 470px;
+            border-radius: 6px;
+            border-width: 3px;
+        }
+        select:hover{
+            border-color: #ffde72;
+            border-width: 3px;
+        }
+        textarea:hover{
+            border-color: #ffde72;
+            border-width: 3px;
+        }
+        .submitbutton{
+            background-color: antiquewhite;
+            color: black;
+            border-radius: 3px;
+            border-color: black 2px;
+            height: 50px;
+            width: 300px;
+        }
+        .submitbutton:hover{
+            background-color: #ffde72;
+            color: black;
+            border-radius: 3px;
+        }
+
+        
+
+
+        
+    </style>
+</head>
+<body style="background-color: rgb(233, 217, 155); margin:20px ; padding: 0; ">
+
+    <div class="container">
+        <div class="sectionleft">
+            <h1 style="padding-top: 65px; text-align: center; text-shadow: 1px 1px 4px rgb(26, 9, 9);"> 
+                Join Our Team!</h1>
+            <p style="text-align: center;">
+                Fill out the form carefully<br> and submit your application.</p>
+            <hr style="border: 1px solid rgb(200, 176, 37); width: 50%; margin: 0 auto;">
+            <br><br> 
+            <h2 style="padding-top: 5px; padding-left: 65px; text-shadow: 1px 1px 3px rgb(91, 91, 28);"> 
+                Why Work With Us?</h2>
+            <br><br>
+            <strong style="padding-left: 65px;">Great Environment</strong>
+            <p style="padding-left: 65px; padding-right: 45px; color: rgb(91, 87, 87);">
+                -> A positive and inclusive work culture.</p>
+            <br>
+            <strong style="padding-left: 65px;">Grow your career</strong>
+            <p style="padding-left: 65px; padding-right: 45px; color: rgb(91, 87, 87);">
+                -> Learn, grow and achieve your goals with us.</p>
+            <br>
+            <strong style="padding-left: 65px;">Flexible & Fun</strong>
+            <p style="padding-left: 65px; padding-right: 45px; color: rgb(91, 87, 87);">
+                -> We value your time and promote work-life balance.</p>
+        </div>
+
+        <div class="sectionright">
+            <header style="background: linear-gradient(to right, #f9f1d6,#FEE79B);">
+               
+            <h1 style="padding-top: 40px; text-align: center; text-shadow: 1px 1px 4px rgb(53, 56, 13); padding-left: 20px; font-family: 'Courier New', Courier, monospace;"> 
+                JOB APPLICATION FORM</h1>
+                <p style="text-align: center;">Please fill in the details below to apply.</p>
+                <br>
+                <br>
+
+                </header>
+       
+<main >
+                <br><br>
+                <form style="margin-left: 20px; gap: 30px; display: flex; margin-right: 20px;">
+                    <div>
+                        <label for="fname">Full Name:</label>
+                        <br> <br>
+                        <input type="text" id="fname" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <br> <br>
+                        <input type="text" id="fname" placeholder="Enter your full name">
+                    </div>
+                    </form>
+                    <br>
+                    <br>
+                    <form style="margin-left: 20px; gap: 30px; display: flex; margin-right: 20px;">
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <br> <br>
+                        <input type="number" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                    <label for="position">Position Applied For:</label>
+                    <br><br>
+                       <select name="position" placeholder="Select position" id="position">
+                        <option value="aiml">AI & ML Intern</option>
+                        <option value="ds">Data Science Intern</option>
+                        <option value="python">Python Developer Intern</option>
+                        <option value="software">Software developer Intern</option>
+                        <option value="web">Web Development Intern</option>
+                       </select>
+                    </div>
+                    </form>
+                    <br>
+                    <br>
+                    <form style="margin-left: 20px; gap: 30px; display: flex; margin-right: 20px;">
+                    <div>
+                        <label for="phone">Date Of Birth:</label>
+                        <br> <br>
+                        <input type="date" id="phone">
+                    </div>
+                    <div>
+                    <label for="position">Experience (in years):</label>
+                    <br><br>
+                       <input type="text" id="experience" placeholder="e.g.2">
+                    </div>
+                    </form>
+                    <br>
+                    <br>
+                    <form style="margin-left: 20px; gap: 30px; display: flex; margin-right: 20px;">
+                    <div>
+                        <label for="fname">Highest Qualification:</label>
+                        <br> <br>
+                        <input type="text" id="fname" placeholder="Enter your highest qualification">
+                    </div>
+                    <div>
+                        <label for="email">Skills (Comma separated):</label>
+                        <br> <br>
+                        <input type="text" id="fname" placeholder="e.g. HTML,CSS,JavaScript...">
+                    </div>
+                    </form>
+                    <br>
+                    <br><div>
+                    <form style="margin-left: 20px; gap: 30px; margin-right: 20px;">
+                        <label for="comment">Cover letter:</label><br><br>
+                        <textarea id="comment" name="comment" rows="5" cols="132"> </textarea>
+                        </form>
+                    
+                        </div>
+                        <div>
+                            <br>
+                            <form style="text-align: center;">
+                                <input class="submitbutton" type="button" id="submit" value="Submit application" onclick="msg()">
+                            </form>
+                        </div>
+
+</main>
+         </div>
+    </div>
+
+</body>
+</html>
