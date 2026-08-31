@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music web page</title>
+</head>
+<style>
+    .container {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    img{
+        width: 500px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    header{
+        height:70px;
+        display:flex;
+        align-items: center;
+        padding: 0 60px;
+        background-color: white;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        gap: 10px;
+        font-weight: bold;
+
+    }
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+    nav{
+        display: flex;
+        gap: 40px;
+        font-weight: bold ;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+    }
+    nav a{
+       text-decoration: none;
+       color: black;
+    }
+    nav a:hover{
+        color: rgba(158, 81, 221, 0.767);
+
+    }
+    .signin{
+        padding: 5px;
+        width: 120px;
+        background-color: rgba(105, 38, 230, 0.767);
+        color: white;
+        border-radius: 5px;
+        height: 40px;
+        border-color: 2px black;
+        box-shadow: 0px 3px 3px 0px;
+    }
+    .signin:hover{
+        background-color: white;
+        color: rgba(105, 38, 230, 0.767);
+        border-color:2px black;
+    }
+    img.src{
+        height: 200;
+        width: 50%;
+    }
+    .centerpart{
+        display:flex; 
+        background-color: rgba(231, 211, 255, 0.863);
+        height: 290px; 
+        margin: 0px; 
+        gap: 120px;
+    }
+    .musicbox img{
+        width:200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .musicbox{ 
+        margin-left: 100px;
+        height: 200px;
+        width: 400px;
+        padding: 10px;
+        gap: 10px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        box-shadow: 0px 3px 3px 0px rgba(158, 81, 221, 0.767);
+    }
+    .musicbox:hover{
+        background-color: rgba(231, 201, 255, 0.767);
+        box-shadow: 0px 3px 3px 0px rgba(3, 3, 3, 0.767);
+
+    }
+
+    h2{
+        text-align: center ;
+        font-weight: bold;
+    }
+    .bottompart{
+        background-color: rgba(231, 211, 255, 0.863);
+        height: 230px; 
+        margin: 0px; 
+        gap: 120px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-weight: bold;
+
+    }
+    footer img{
+        width: 60px;
+        height: 60px;
+    }
+    ul a{
+        text-decoration: none;
+        color: black;
+    }
+    ul a:hover{
+        color: rgba(158, 81, 221, 0.767);
+    }
+    
+   
+
+
+</style>
+<body>
+    <div class="container">
+<header>
+    <div class="logo">
+           <img src="musiclogo.png">
+           <span>Music beats</span> 
+        </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Songs</a>
+        <a href="#">Artists</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button class="signin">Sign In</button>
+</header>
+<main>
+    <div class="centerpart">
+  
+        <div style="margin-left: 150px; padding: 20px; padding-bottom: 30px; font-size: large; font-weight: bold; ">
+        <h1>Your Music,</h1>
+        <h1 style="color: rgba(105, 38, 230, 0.767);">Your Mood !!!</h1>
+  
+        <p style="color: rgb(87, 84, 84); font-size: 18px; padding-right: 20px; gap: 20px;">Discover trending songs, favorite artists and  playlists made just for you</p>
+
+        <button class="signin">Explore Songs</button>
+        </div>
+    <div style="justify-content: space-between; "> 
+
+    </div>
+    </div>
+
+    <div>
+        <h2>Trending Songs</h2>
+        <hr style="width: 20px; height: 2px; align-items: center; background-color: rgba(158, 81, 221, 0.767);">
+        <br>
+    </div>
+    <div style="display: flex; gap: 100px;">
+    <div class="musicbox">
+        <img src="night_changes.jpeg">
+        <div><h3 style="text-align: center; font-size: 28px;">Night Changes</h3><p style="text-align: left;">->  One Direction</p>
+            <br>
+        <button class="signin"> Play </button>
+        </div>
+        
+    </div>
+    <div class="musicbox">
+        <img src="dreams.jpeg">
+        <div><h3 style="text-align: center; font-size: 28px;">Dreams</h3><p style="text-align: left;">->  Fleetwoo Mac</p>
+            <br>
+        <button class="signin"> Play </button>
+        </div>
+     </div>  
+
+        <div class="musicbox">
+        <img src="at_my_worst.jpeg">
+        <div><h3 style="text-align: center; font-size: 28px;">At My Worst</h3><p style="text-align: left;">->  pink Sweat$</p>
+            <br>
+        <button class="signin"> Play </button>
+        </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    </div>
+    <div class="bottompart">
+        <br><div>
+        <h2>Why Music?</h2>
+       <hr style="width: 20px; height: 2px; align-items: center; background-color: rgba(158, 81, 221, 0.767);">
+    </div>
+    <div style="display: flex; gap: 60px">
+    <div style="padding-left: 150px ; margin-top: 20px;">
+        <b style="font-size: 28px;">Heals stress</b>
+        <p style="color: rgb(87, 84, 84);">Music relaxes your mind<br> and reduces stress.</p>
+
+    </div>
+        <div style="padding-left: 150px ; margin-top: 20px;">
+        <b style="font-size: 28px;">Boosts mood</b>
+        <p style="color: rgb(87, 84, 84);">Music can improve your mood and <br>make you feel happier.</p>
+
+    </div>
+        <div style="padding-left: 150px ; margin-top: 20px;">
+        <b style="font-size: 28px;">Improve Focus</b>
+        <p style="color: rgb(87, 84, 84);">Helps you concenterate<br> while working or studying.</p>
+
+    </div>
+        <div style="padding-left: 150px ; margin-top: 20px;">
+        <b style="font-size: 28px;">Bring people together</b>
+        <p style="color: rgb(87, 84, 84);">Music connects hearts<br>beyond words.</p>
+
+    </div>
+    </div>
+    <hr style="height:3px; width:100%; background-color: rgba(158, 81, 221, 0.767);">
+
+        
+</main>
+<footer style="display: flex; gap: 250px;">
+    <div>
+           <img src="musiclogo.png">
+           <span style="font-size: 30px;">Melody</span> 
+           <br>
+           <p style="color: rgb(87, 84, 84); margin-left:70px;">Feel the music, live the moment.</p>
+        </div>
+        <div style="text-align: left;">
+            <p style="font-size: 25px;"><b>Quick Links</b></p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Songs</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+         <div style="text-align: left;">
+            <p style="font-size: 25px;"><b>Support</b></p>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy and policy</a></li>
+                <li><a href="#">Terms and condition</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+</footer>
+  
+    
+</body>
+</html>
